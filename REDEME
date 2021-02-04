@@ -1,0 +1,17 @@
+1 - passo criar uma pasta 
+2 - cirar um arquivo .python
+3 - import module Flask 
+4 - pip install -U pip --user
+5 - teste de servidor
+from flask import Flask 
+app = Flask(__name__)
+@app.route('/')
+def home(): 
+    return "teste de server"
+app.run()  
+
+ou app.run(port=3000)  
+atualiza automatico = nodemon
+app.run(port=3000, debug =True)   
+
+estrutura src / view
